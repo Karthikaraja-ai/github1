@@ -25,3 +25,33 @@
 
 </body>
 </html>
+body{
+font-family: Arial;
+text-align:center;
+background-color:#f2f2f2;
+}
+
+.container{
+background:white;
+padding:20px;
+width:300px;
+margin:auto;
+margin-top:100px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+input{
+width:90%;
+padding:8px;
+margin:10px;
+}
+
+button{
+padding:10px;
+background:green;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
