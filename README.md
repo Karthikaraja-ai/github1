@@ -55,3 +55,25 @@ border:none;
 border-radius:5px;
 cursor:pointer;
 }
+function setReminder(){
+
+let medicine = document.getElementById("medicineName").value;
+let time = document.getElementById("reminderTime").value;
+
+document.getElementById("status").innerText =
+"Reminder set for " + medicine + " at " + time;
+
+setInterval(function(){
+
+let now = new Date();
+let currentTime = now.getHours() + ":" + now.getMinutes();
+
+if(currentTime == time){
+
+alert("Time to take your medicine: " + medicine);
+
+}
+
+},60000);
+
+}
